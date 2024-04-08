@@ -38,3 +38,40 @@ main();
 // app.use('/',route);
 
 // app.listen(6001);
+
+
+//monggose database use
+
+// const mongoose = require('mongoose');
+
+// const ProductSchema = new mongoose.Schema({
+//     name:String,
+//     price:Number,
+//     brand:String,
+//     category:String
+// });
+// const main = async ()=>{
+//     await mongoose.connect("mongodb://localhost:27017/e-com");
+   
+//     const ProductModel = new mongoose.model('products',ProductSchema);
+//     let data = new ProductModel({name:"redmi 10",price:250,brand:'Redmi',category:'mobile'});
+//     let result = await data.save();
+//     console.log(result);
+// }
+// main();
+// const updateDb = async()=>{
+//     const Product = mongoose.model('products',ProductSchema);
+//     let data = await Product.updateOne(
+//         {name:'redmi 10'},
+//             { $set:{price:275}
+//         }
+//     )
+//     console.log(data);
+// }
+// updateDb();
+// const deleteDb = async()=>{
+//     const Product = mongoose.model('products',ProductSchema);
+//     let data  = await Product.deleteMany({name:"redmi 10"});
+//     console.log(data);
+// }
+// deleteDb();
